@@ -3,18 +3,22 @@
     src: url("https://raw.githubusercontent.com/maxi83c/Fonts/main/herculanum.woff");
   }
   
-
-body { 
+  body { 
     font-family: "herculanum", sans-serif;
     background-color: #f46d33; 
+    width: 100%;
   } 
-    
+
+  header { 
+    min-height: 140px;
+  } 
+
 .title,
 .subtitle {
   color: white;
   text-transform: uppercase;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   letter-spacing: 0.4rem;
   margin: 0;
@@ -28,4 +32,23 @@ body {
 .subtitle {
   font-size: 1.5rem;
   top: 7.3rem;
+}
+
+main{
+  display: block;
+  padding: 1em; 
+
+}
+
+#sokka-attack{
+  text-align: center; 
+}
+.video-sokka-attack{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
 }
