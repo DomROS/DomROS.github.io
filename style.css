@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "herculanum";
+    src: url("https://raw.githubusercontent.com/maxi83c/Fonts/main/herculanum.woff");
+  }
+  
+
+body { 
+    font-family: "herculanum", sans-serif;
+    background-color: #f46d33; 
+  } 
+    
+.title,
+.subtitle {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100vw;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  margin: 0;
+  text-shadow: 0 0 var(--blur-size) white;
+}
+
+.title {
+  font-size: 6rem;
+  top: 1.5rem;
+}
+.subtitle {
+  font-size: 1.5rem;
+  top: 7.3rem;
+}
