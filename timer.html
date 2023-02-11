@@ -10,26 +10,25 @@
     <script src="/Scripts/succesfulSequence.js"></script>
     <title>Avatar</title>
 </head>
-<body>
+<body onload="countdown()">
     <header>
         <div class="title">
             <a href="index.html" class="title">
-                <h1 class="title">Avatar</h1>
-                <h2 class="subtitle">Sokka Attack</h2>
+                <h1 class="title">Trip</h1>
+                <h2 class="subtitle">Mountain Adventure</h2>
             </a>
         </div>
     </header>
     <main>
         <section id="sokka-attack">
-            <video class="video-sokka-attack"width="1080" height="720" controls>
-                <source src="Videos/Sokka_Attack.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
+            <p>The time remaining until our trip is: 
+                <br>
+                <div id="countdown"></span>
+            </p>     
         </section>
-        
-        <section id="mobile">
-            <input type="date" id="dateField">
-        </section>
+        <section id="appa">
+            <img src="Images/flying-appa.gif" class="appa-gif">
+        </section> 
     </main>
 
     <footer> 

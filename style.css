@@ -13,12 +13,16 @@
     min-height: 140px;
   } 
 
+
+  .title{
+    width: 100%;
+    text-decoration:none;
+  }
+
 .title,
 .subtitle {
   color: white;
   text-transform: uppercase;
-  position: absolute;
-  width: 100%;
   text-align: center;
   letter-spacing: 0.4rem;
   margin: 0;
@@ -37,18 +41,42 @@
 main{
   display: block;
   padding: 1em; 
-
+  min-width: 100%;
 }
 
 #sokka-attack{
   text-align: center; 
+  
 }
 .video-sokka-attack{
   margin-left: auto;
   margin-right: auto;
 }
 
+#countdown {
+  font-size: 72px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 100px;
+
+}
+
+#appa{
+  margin: auto;
+  text-align: center;
+}
+
 footer {
   text-align: center;
   padding: 1em;
+}
+
+#mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #mobile {
+      display: block;
+  } 
 }
