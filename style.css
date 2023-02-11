@@ -78,6 +78,7 @@ footer {
 @media only screen and (max-width: 480px) {
   #mobile {
       display: block;
+      text-align: center;
   } 
   video
   {
