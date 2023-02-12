@@ -14,23 +14,25 @@ else
 {
 
 
-let expectedKeySequence = ["2", "2", "0","2","2","0","2","2"];
-let currentKeyIndex = 0;
+// define the sequence
+let tripSequence = ["2", "2", "0", "2"]
 
-document.addEventListener('keydown', (event) => {
-  let key = event.key;
+let valentineSequence = ["1", "4", "0", "2"]
 
-  if (key === expectedKeySequence[currentKeyIndex]) {
-    currentKeyIndex++;
+// set up a variable to track the current input
+let input = []
 
-    if (currentKeyIndex === 8) {
+// add the key to the input
+document.addEventListener("keydown", function(e) {
+  input.push(e);
 
-        moveToCounter();
-
-    }
-  } else {
-    currentKeyIndex = 0;
+  // check if the last 10 pressed keys match the sequence
+  if (input.slice(-4).toString() == tripSequence.toString()) {
+    moveToTrip();
   }
-});
+  if (input.slice(-4).toString() == valentineSequence.toString()) {
+    moveToValentine();
+  }
+})
 
 }

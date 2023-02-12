@@ -1,6 +1,6 @@
-function moveToCounter()
+function moveToTrip()
 {
-    window.location.href = "timer.html";
+    window.location.href = "trip_timer.html";
 }
 
 function countdown()
@@ -31,7 +31,7 @@ function countdown()
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("countdown").innerHTML = "Trip Started!";
     }
     }, 1000);
 }
