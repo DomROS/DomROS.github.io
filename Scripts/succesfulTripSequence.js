@@ -3,7 +3,7 @@ function moveToTrip()
     window.location.href = "trip_timer.html";
 }
 
-function countdown()
+function tripCountdown()
 {
 
     // Set the date we're counting down to
