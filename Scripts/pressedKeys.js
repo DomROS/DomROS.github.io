@@ -24,7 +24,7 @@ let input = []
 
 // add the key to the input
 document.addEventListener("keydown", function(e) {
-  input.push(e);
+  input.push(e.key);
 
   // check if the last 10 pressed keys match the sequence
   if (input.slice(-4).toString() == tripSequence.toString()) {
