@@ -1,9 +1,9 @@
 function moveToValentine()
 {
-    window.location.href = "timer.html";
+    window.location.href = "valentine_timer.html";
 }
 
-function countdown()
+function valentineCountdown()
 {
 
     // Set the date we're counting down to
