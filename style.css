@@ -66,6 +66,30 @@ main{
   text-align: center;
 }
 
+.valentineOptions{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  width: 70%;
+  height: 20%;
+}
+
+
+.valentineButton{
+  height: 5%;
+  width: 10%;
+  text-align: center;
+  padding: 10px;
+}
+
+#yesButton{
+  background-color: #03d615;
+}
+
+#yesButton{
+  background-color: #d65703;
+}
+
 footer {
   text-align: center;
   padding: 1em;
