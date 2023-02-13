@@ -66,6 +66,20 @@ main{
   text-align: center;
 }
 
+#answer-yes, #answer-no{
+  display: none;
+  margin: auto;
+  text-align: center;
+}
+
+.answer-gif{
+  margin: auto;
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  
+}
+
 #valentineOptions{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -74,22 +88,59 @@ main{
   height: 20%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 100px;
 }
 
 
 .valentineButton{
-  height: 5%;
-  width: 10%;
   text-align: center;
   padding: 10px;
+  
 }
 
 #yesButton{
   background-color: #03d615;
+  height: 70%;
+  width: 20%;
+  border-radius: 5px;
+  font-size: 40px;
+  font-family: "herculanum", sans-serif;
+  cursor: pointer;
 }
 
 #noButton{
   background-color: #d65703;
+  height: 70%;
+  width: 20%;
+  border-radius: 5px;
+  font-size: 40px;
+  font-family: "herculanum", sans-serif;
+  cursor: pointer;
+}
+
+.heart{
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  transform-origin: center;
+  position: relative;
+  margin: 100px auto;
+  background-color: red;
+}
+.heart::before, .heart::after{
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: red;
+}
+.heart::before{
+  left: -100px;
+}
+.heart::after{
+  top: -100px;
+  left: 0px;
 }
 
 footer {

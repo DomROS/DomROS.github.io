@@ -36,3 +36,29 @@ function valentineCountdown()
     }, 1000);
 }
 
+function valentineAnswerYes(){
+// Get the divs you want to appear and dissappear from the DOM
+let answerNo = document.querySelector('#answer-no');
+let answerYes = document.querySelector('#answer-yes');
+let buttonNo = document.querySelector('#noButton');
+let buttonYes = document.querySelector('#yesButton');
+    // Set the display style for the two divs when the button is clicked
+    buttonNo.style.display = 'none';
+    buttonYes.style.display = 'none';
+    answerNo.style.display = 'none';
+    answerYes.style.display = 'block';
+
+}
+
+function valentineAnswerNo(){
+    // Get the divs you want to appear and dissappear from the DOM
+    let answerNo = document.querySelector('#answer-no');
+    let answerYes = document.querySelector('#answer-yes');
+    let buttonNo = document.querySelector('#noButton');
+    let buttonYes = document.querySelector('#yesButton');
+      // Set the display style for the two divs when the button is clicked
+      buttonNo.style.display = 'none';
+      buttonYes.style.display = 'none';
+      answerYes.style.display = 'none';
+      answerNo.style.display = 'block';
+}
